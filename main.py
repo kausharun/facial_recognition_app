@@ -60,4 +60,5 @@ while True:
     if key == ord("q"):
         break
 
+capture.release()
 cv2.destroyAllWindows()

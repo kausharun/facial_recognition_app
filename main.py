@@ -3,7 +3,7 @@ import cv2
 from deepface import DeepFace
 
 # Capture from my laptops one camera hence '0'
-capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+capture = cv2.VideoCapture(0)
 
 if not capture.isOpened():
     print("Error: Could not open the camera.")

@@ -19,13 +19,13 @@ counter = 0
 
 face_match = False
 
-img = cv2.imread("sample_pic.jpg")
+ref_img = cv2.imread("sample.jpg")
 
 # used to check if the frame matches the sample img
 def check_face(frame):
     global face_match
     try:
-        if DeepFace.verify(frame, img.copy())['verified']:
+        if DeepFace.verify(frame, ref_img.copy())['verified']:
             face_match = True
         else:
             face_match = False

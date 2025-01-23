@@ -19,7 +19,7 @@ counter = 0
 
 face_match = False
 
-ref_img = cv2.imread("me_sample.jpg")
+ref_img = cv2.imread("sample_4.jpeg")
 
 if ref_img is None:
     print("Error: Image not loaded. Check if the file exists and the path is correct.")

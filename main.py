@@ -50,7 +50,7 @@ while True:
         cv2.imshow("result", frame)
     
     # process user input
-    key = cv2.waitkey(1)
+    key = cv2.waitKey(1)
     if key == ord("q"):
         break
 
